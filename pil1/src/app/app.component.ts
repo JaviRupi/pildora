@@ -1,4 +1,4 @@
-import '../polyfills';
+
 
 import { Component } from '@angular/core';
 

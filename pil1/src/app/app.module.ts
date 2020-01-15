@@ -7,13 +7,17 @@ import { MatTableModule } from '@angular/material/table';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WikiComponent } from './wiki/wiki.component';
+import { PostsComponent } from './components/posts/posts.component';
+import { FilterPipe } from './pipe/filter.pipe';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    WikiComponent
+    PostsComponent,
+    FilterPipe,
+
   ],
   imports: [
     BrowserModule,
