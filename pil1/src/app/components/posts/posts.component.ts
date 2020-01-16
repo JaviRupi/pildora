@@ -31,6 +31,12 @@ export class PostsComponent implements OnInit {
 
     ];
 
+    ejemplo = [
+      {
+        ejemplo1: '<p>Mi gato es <strong>muy</strong> gruñon.</p>'
+      }
+    ];
+
 
 
 

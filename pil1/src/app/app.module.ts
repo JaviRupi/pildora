@@ -2,14 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatInputModule } from '@angular/material/input';
-import { MatTableModule } from '@angular/material/table';
-import { MatFormFieldModule } from '@angular/material/form-field';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { FilterPipe } from './pipe/filter.pipe';
-
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -18,6 +15,7 @@ import { FilterPipe } from './pipe/filter.pipe';
     PostsComponent,
     FilterPipe,
 
+
   ],
   imports: [
     BrowserModule,
@@ -25,9 +23,7 @@ import { FilterPipe } from './pipe/filter.pipe';
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    MatInputModule,
-    MatTableModule,
-    MatFormFieldModule
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

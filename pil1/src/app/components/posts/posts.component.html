@@ -20,7 +20,17 @@
         <tbody>
           <tr *ngFor="let post of etiquetas | filter:filterPost" >
             <th>{{post.id}}</th>
-            <button><th>{{post.nombre}}</th></button>
+            <div  ngbDropdown class="d-inline-block">
+              <button class="polla" id="dropdownBasic1" ngbDropdownToggle><th>{{post.nombre}}</th></button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1" style="min-width: 430px;" >
+                <h6>Etiqueta {{post.nombre}}</h6>
+                <a *ngFor="let post of ejemplo">
+                  <p>{{post.ejemplo1}}</p>
+                </a>
+
+              </div>
+            </div>
+
             <th>{{post.des}}</th>
           </tr>
         </tbody>
