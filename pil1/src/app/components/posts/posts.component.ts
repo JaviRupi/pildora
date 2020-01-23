@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { etiquetas } from 'src/app/Models/Etiquetas';
 
 @Component({
   selector: 'app-posts',
@@ -6,21 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
+  etiquetas: etiquetas[];
+  constructor() {}
 
-  constructor() { }
   filterPost = '';
-
+/*
     etiquetas = [
       {
         id : 1,
         nombre: ' <a> ',
-        des: 'Texto de ejemplo'
+        des: 'Texto de ejemplo',
+        ejemplo: '<p>Mi gato es <a href="">muy</a> gruñon.</p>'
+
       },
 
       {
         id : 2,
         nombre: ' <br> ',
-        des: 'Texto de ejemplo'
+        des: 'Texto de ejemplo',
+        ejemplo: '<p>Mi perro la chupa <a href="">muy</a> gruñon.</p>'
       },
 
       {
@@ -30,20 +35,9 @@ export class PostsComponent implements OnInit {
       },
 
     ];
-
-    ejemplo = [
-      {
-        ejemplo1: '<p>Mi gato es <strong>muy</strong> gruñon.</p>'
-      }
-    ];
-
-
-
-
-
-
-
+*/
   ngOnInit() {
   }
+
 
 }

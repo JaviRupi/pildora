@@ -1,5 +1,6 @@
-[Mon Jan 20 19:12:04.193064 2020] [mpm_winnt:notice] [pid 4636:tid 848] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
-[Mon Jan 20 19:12:04.193064 2020] [mpm_winnt:notice] [pid 4636:tid 848] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
-[Mon Jan 20 19:12:04.193064 2020] [core:notice] [pid 4636:tid 848] AH00094: Command line: 'E:\\Github\\Prueba\\Pildora\\USBWebserver/apache2/bin/httpd_usbwv8.exe -d E:/Github/Prueba/Pildora/USBWebserver/apache2'
-[Mon Jan 20 19:12:04.196029 2020] [mpm_winnt:notice] [pid 4636:tid 848] AH00418: Parent: Created child process 2204
-[Mon Jan 20 19:12:04.775985 2020] [mpm_winnt:notice] [pid 2204:tid 832] AH00354: Child: Starting 64 worker threads.
+[Thu Jan 23 18:59:44.101642 2020] [mpm_winnt:notice] [pid 9352:tid 848] AH00455: Apache/2.4.6 (Win32) PHP/5.4.17 configured -- resuming normal operations
+[Thu Jan 23 18:59:44.102639 2020] [mpm_winnt:notice] [pid 9352:tid 848] AH00456: Apache Lounge VC10 Server built: Jul 16 2013 11:15:41
+[Thu Jan 23 18:59:44.102639 2020] [core:notice] [pid 9352:tid 848] AH00094: Command line: 'E:\\Github\\Prueba\\Pildora\\pildora\\USBWebserver/apache2/bin/httpd_usbwv8.exe -d E:/Github/Prueba/Pildora/pildora/USBWebserver/apache2'
+[Thu Jan 23 18:59:44.107626 2020] [mpm_winnt:notice] [pid 9352:tid 848] AH00418: Parent: Created child process 4752
+[Thu Jan 23 18:59:44.717993 2020] [mpm_winnt:notice] [pid 4752:tid 864] AH00354: Child: Starting 64 worker threads.
+[Thu Jan 23 20:50:39.483967 2020] [mpm_winnt:warn] [pid 4752:tid 1764] (OS 64)El nombre de red especificado ya no está disponible.  : AH00341: winnt_accept: Asynchronous AcceptEx failed.

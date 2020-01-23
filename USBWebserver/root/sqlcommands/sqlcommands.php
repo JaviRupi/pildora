@@ -54,14 +54,12 @@ function logIn($name, $password, $con) {
         return false;
     }
 }
-function insertarImg($img,$con){
-    $image = addcslashes(file_get_contents($_FILES['imagen']['tmp_name']));
-    $query = "INSERT INTO wiki ($img)";
-}
 
-function cargarImg($nom,$des,$img,$con)
-{
-$foto= "Select count(*) from wiki where nombre = '$nom'";
-$sth = $con->query($foto);
-$result
+function cargarEtiquetas($con){
+    $info = arry();
+    $res= mysqli_query($con,"Select * from wiki");
+    while($row=mysqli_fecth_assoc($res)){
+        array_push($info,$res);
+    }
+    return json_encode($info);
 }

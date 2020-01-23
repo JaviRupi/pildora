@@ -1,3 +1,23 @@
+
+.total{
+  width: 100%;
+  background-size: cover;
+  height: 100%;
+  background-image: url(../../../assets/fondo.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.body-background-color{
+  background-color: rgb(255, 255, 255);
+}
+
+@media all and (min-width: 992px){
+.dor{
+  width: 420px;
+}
+}
+
 .polla{
   border: 0;
   background-color: transparent;
@@ -6,3 +26,5 @@
 th {
   border: 0;
 }
+
+
