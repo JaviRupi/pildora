@@ -1,17 +1,25 @@
 import { Component, OnInit } from '@angular/core';
-import { etiquetas } from 'src/app/Models/Etiquetas';
+import { Etiquetas } from 'src/app/Models/Etiquetas';
+import { PruebaService } from '../../prueba.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
+
   selector: 'app-posts',
   templateUrl: './posts.component.html',
   styleUrls: ['./posts.component.css']
 })
 export class PostsComponent implements OnInit {
-  etiquetas: etiquetas[];
-  constructor() {}
+  etiqueta: Etiquetas;
+  etiquetas: Etiquetas[];
+  constructor( private pruebaservice: PruebaService, private http: HttpClient) {
+  }
 
   filterPost = '';
-/*
+
+
+
+  /*
     etiquetas = [
       {
         id : 1,
@@ -38,6 +46,8 @@ export class PostsComponent implements OnInit {
 */
   ngOnInit() {
   }
+
+
 
 
 }

@@ -19,7 +19,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr *ngFor="let post of etiquetas | filter:filterPost" >
+          <tr *ngFor="let post of this.pruebaservice.etiquetasdata | filter:filterPost" >
             <th>{{post.id}}</th>
             <div  ngbDropdown class="d-inline-block">
               <button class="polla" id="dropdownBasic1" ngbDropdownToggle><th>{{post.nombre}}</th></button>
@@ -31,8 +31,7 @@
 
               </div>
             </div>
-
-            <th>{{post.des}}</th>
+            <th>{{post.desc}}</th>
           </tr>
         </tbody>
       </table>

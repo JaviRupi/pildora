@@ -1,6 +1,6 @@
-export class etiquetas {
+export class Etiquetas {
   public id: number;
-  public nombre: String;
-  public desc: String;
-  public ejemplo:String;
+  public nombre: string;
+  public desc: string;
+  public ejemplo: string;
 }
